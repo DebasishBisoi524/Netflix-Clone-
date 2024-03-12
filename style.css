@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap") * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(./Assets/Images/bg.jpg);
+  background-position: center center;
+  background-size: max(1800px, 100vw);
+  background-repeat: no-repeat;
+  height: 94vh;
+  position: relative;
+}
+
+.main .box {
+  height: 94vh;
+  width: 100%;
+  opacity: 0.76;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+nav img {
+  color: red;
+  width: 145px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 21px;
+  padding: 0 30px; /* responsive */
+  text-align: center; /* responsive */
+}
+
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 45px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.separation {
+  height: 2px;
+  background-color: rgb(79, 79, 79);
+}
+
+.btn {
+  padding: 7px 29px;
+  font-weight: bold;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.hero-button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 7px 24px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.hero-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.main input{
+  padding: 7px 101px 8px 14px;
+  color: white;
+  font-weight: 300;
+  font-size: 19px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5 );
+} 
+
+.btn-red-sm {
+  padding: 4px 12px;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid red;
+  font-size: 17px;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-red-sm:hover{
+  background-color: rgb(183, 28, 28);
+}
+
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.secImg{
+  position: relative;
+}
+
+.secImg img{
+  width: 555px;
+  position: relative;
+  z-index: 10;
+  /* overflow: hidden; */
+}
+
+.secImg video{
+  position: absolute;
+  top: 96px;
+  right: 15px;
+  /* width: 555px; */
+}
+
+section.first > div{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 12px;
+}
+
+section.first>div ::selection{
+  background-color: red;
+}
+
+section.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+  font-size: 24px;
+
+}
+
+.FAQ h2{
+  text-align: center;
+  font-size: 42px;
+}
+
+.FAQ{
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-box{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 24px;
+  background-color: rgb(46, 45, 45);
+  padding: 24px;
+  max-width: 74vw;
+  margin: 7px auto;
+  transition: all 0.2s ease-in-out;
+  cursor:pointer;
+}
+
+.faq-box:hover{
+  background-color: rgb(77, 76, 76);;
+}
+
+footer{
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+}
+
+footer .question{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:39px 28px;
+  color: rgba(114, 114, 114, 1);
+}
+
+
+
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer a{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(114, 114, 114, 1);
+}
+
+.footer a:hover{
+  color: rgb(230, 230, 230);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
